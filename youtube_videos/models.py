@@ -12,5 +12,5 @@ class Video(models.Model):
     description = models.CharField(max_length=255, null=False)
     publishing_date = models.DateTimeField(null=False)
     thumbnail_urls = models.CharField(max_length=255, null=False)
-    video_count = models.CharField(max_length=255)
+    view_count = models.CharField(max_length=255)
     duration = models.CharField(max_length=255)
