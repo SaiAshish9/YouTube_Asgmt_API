@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from datetime import datetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,4 +132,12 @@ CORS_ORIGIN_ALLOW_ALL=True
  
 REST_FRAMEWORK = { 
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination'
+}
+
+CELERY_BEAT_SCHEDULE = { 
+    'Task_one_schedule' : { 
+        'task': 'youtube_videos.tasks.task_one',
+        'schedule': 1000  # secs
+        # 'args' : {datetime.now()} # arguments for the task
+    },
 }
