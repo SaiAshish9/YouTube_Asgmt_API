@@ -137,7 +137,7 @@ REST_FRAMEWORK = {
 CELERY_BEAT_SCHEDULE = { 
     'Task_one_schedule' : { 
         'task': 'youtube_videos.tasks.task_one',
-        'schedule': 1000  # secs
+        'schedule': 10  # runs after every 10 seconds
         # 'args' : {datetime.now()} # arguments for the task
     },
 }
