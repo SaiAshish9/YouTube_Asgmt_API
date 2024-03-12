@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.8.9
 
 ENV PYTHONUNBUFFERED 1
 
@@ -8,4 +8,4 @@ WORKDIR /youtube_videos
 
 ADD . /youtube_videos/
 
-RUN pip install -r requirements.txt
+RUN python3 -m pip install -r requirements.txt
