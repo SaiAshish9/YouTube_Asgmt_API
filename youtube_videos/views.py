@@ -11,7 +11,7 @@ class VideotList(GenericAPIView, ListModelMixin):
         return self.list(request, *args, **kwargs)
     
 class VideoSearchView(ListAPIView):
-    queryset = Video.objects.all()
+    queryset = Video.objects.all().order_by('-publishing_date')
     serializer_class = VideoSerializer
     filter_backends = [SearchFilter]
     search_fields = ['title', 'description']
