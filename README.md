@@ -60,6 +60,7 @@ Note: Used Celery worker, beat and redis server to run required asynchronous tas
 
 <img width="829" alt="Screenshot 2024-03-13 at 11 19 49 AM" src="https://github.com/SaiAshish9/YouTube_Asgmt_API/assets/43849911/95513924-0636-4686-9e27-0db2f14f016e">
 
+
 Note: Refer to the postman documentation
 
 
@@ -67,12 +68,14 @@ Note: Refer to the postman documentation
 
 <img width="835" alt="Screenshot 2024-03-13 at 11 20 59 AM" src="https://github.com/SaiAshish9/YouTube_Asgmt_API/assets/43849911/6db7d2d7-3a8a-44fa-b7f2-459b68579eac">
 
+
 Note: Refer to the postman documentation
 
 
 4. Dockerize the project.
 
 <img width="830" alt="Screenshot 2024-03-13 at 11 21 31 AM" src="https://github.com/SaiAshish9/YouTube_Asgmt_API/assets/43849911/0d268c60-a2c7-48e2-b389-6ccfb619e3ec">
+
 
 Note: Follow the above mentioned installation steps using docker
 
@@ -92,7 +95,9 @@ Note: Follow the above mentioned installation steps using docker
 
 
 7. Make a dashboard to view the stored videos with filters and sorting options (optional)
+
 <img width="1440" alt="Youtube Assignment" src="https://github.com/SaiAshish9/YouTube_Asgmt_API/assets/43849911/58f1d3ca-24a6-44a1-a5dc-d4605adc7157">
+
 
 Note: For now, I've implemented LimitOffsetPagination and search functionality. Next, I plan to integrate the filters modal, enabling specific actions similar to those on youtube.com
 
@@ -101,5 +106,6 @@ Note: For now, I've implemented LimitOffsetPagination and search functionality. 
 Ex 1: A video with title How to make tea? should match for the search query tea how
 
 <img width="828" alt="Screenshot 2024-03-13 at 11 24 33 AM" src="https://github.com/SaiAshish9/YouTube_Asgmt_API/assets/43849911/8bbfb8dd-3a6d-46e0-a9d6-77d4486b9a1d">
+
 
 Note: For now, I've optimized it using Django REST Framework search filters. In the future, we can explore ElasticSearch as a potentially more effective alternative
